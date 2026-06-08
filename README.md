@@ -76,3 +76,16 @@ The project includes a `db.json` file which acts as a mock database. If you use 
 ```bash
 npx json-server --watch db.json --port 8000
 ```
+
+## 🖼️ UI Showcase - Partial
+### Login Page
+<img width="1394" height="700" alt="image" src="https://github.com/user-attachments/assets/b612c899-3725-4c7e-8c73-aeecc8d3bf70" />
+
+### Restaurant Portal 
+<img width="1410" height="698" alt="image" src="https://github.com/user-attachments/assets/b0a2a287-1eb6-4b8e-b503-0b96b3f25990" />
+<img width="1409" height="700" alt="image" src="https://github.com/user-attachments/assets/14b7fb1d-5d7e-4c8d-a7f3-835e80c7768d" />
+<img width="1409" height="698" alt="image" src="https://github.com/user-attachments/assets/35535a6a-c428-494c-be1b-c7d30a07749f" />
+
+### Delivery Portal
+<img width="1409" height="702" alt="image" src="https://github.com/user-attachments/assets/e1fc34f9-58e5-48c2-943e-61cb15bb1bf5" />
+
