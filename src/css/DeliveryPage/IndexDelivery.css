@@ -1,0 +1,157 @@
+.delivery-mainContent {
+    margin-top: 100px;
+    margin-bottom: 30px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* heading area */
+.delivery-mainContent .delivery-heading {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.delivery-heading .delivery-heading-date-time {
+    display: flex;
+    gap: 20px;
+}
+
+/* pickup order area */
+.delivery-mainContent .delivery-pickup-area {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 0.8fr 2.2fr;
+    grid-gap: 20px;
+}
+
+.delivery-pickup-area .delivery-pickup-order-list, 
+.delivery-pickup-area .delivery-address-direction {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 7px 25px rgba(0, 0, 0, 0.2);
+}
+
+.delivery-pickup-area {
+    text-align: center;
+}
+
+.delivery-pickup-area h2 {
+    padding-bottom: 15px;
+}
+
+.delivery-pickup-order .pickup-order-row {
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+    width: 95%;          
+    margin: 10px auto;                                                
+    background: #555;
+    padding: 15px 10px;
+    color: white;
+    font-size: 15px;
+    box-shadow: 0 1px 4px 0 rgba(0, 0, 50, 2);
+    border-radius: 15px;
+}
+
+.delivery-pickup-order .pickup-order-row:hover {
+    background-color: #c09999;
+    transform: scale(1.05);
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2), -1px -1px 8px rgba(0, 0, 0, 0.2);
+}
+
+.pickup-order-row-detail button {
+    border: none;
+    font-size: 23px;
+    background: transparent;
+    margin: 20px 12px 20px 0;
+    color: white;
+    cursor: pointer;
+}
+
+.pickup-order-row-detail button:hover {
+    transform: scale(1.2);
+}
+
+/* Delivery direction */
+.delivery-address-direction iframe {
+    width: 100%;
+    height: auto;
+    min-height: 500px;
+    border-radius: 10px;
+    border: none;
+}
+
+.delivery-address-direction h2 {
+    padding-bottom: 25px;
+}
+
+/* available order */
+.availableOrder-container {
+    width: 400px;
+    height: auto;
+    background: #e6e6e8;
+    padding: 20px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 20px;
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    z-index: 2000;
+}
+
+.availableOrder-container .availableOrder-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.availableOrder-heading h2 {
+    text-align: center;
+    width: 100%;
+}
+
+.availableOrder-heading button{
+    border: none;
+    background: #e6e6e8;
+    transform: scale(1.5);
+    cursor: pointer;
+}
+
+.availableOrder-heading button:hover {
+    transform: scale(1.2);
+}
+
+.availableOrder-mainContent .availableOrder-row {
+    line-height: 25px;
+}
+
+.availableOrder-mainContent .availableOrder-btn {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.availableOrder-btn button {
+    border: none;
+    width: 120px;
+    height: 40px;
+    font-size: 15px;
+    border-radius: 10px;
+    background: black;
+    color: white;
+    font-weight: 600;
+    padding: 10px;
+    cursor: pointer;
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2), -1px -1px 8px rgba(0, 0, 0, 0.2);
+}
+
+.availableOrder-btn button:hover {
+    transform: scale(0.9);
+}

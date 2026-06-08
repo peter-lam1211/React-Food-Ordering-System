@@ -1,0 +1,35 @@
+.addToCartBtn {
+    background: black;
+    color: white;
+    padding: 3px;
+    border-radius: 15px;
+    font-size: 15px;
+    transition: transform 0.3s;
+    box-shadow: 2px 2px 4px rgba(1, 1, 1, 0.5);
+    cursor: pointer;
+}
+
+.addToCartBtn:hover {
+    transform: translateY(-10px)
+}
+
+.subtractBtn, .addBtn {
+    background: black;
+    color: white;
+    padding: 3px 7px;
+    box-shadow: 2px 2px 4px rgba(1, 1, 1, 0.5);
+    cursor: pointer;
+}
+
+.subtractBtn:hover {
+    transform: scale(0.9);
+}
+
+.addBtn:hover {
+    transform: scale(0.9);
+}
+
+.numInCart {
+    margin: 0 10px;
+    font-weight: bold;
+}

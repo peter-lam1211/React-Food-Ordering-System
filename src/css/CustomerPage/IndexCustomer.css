@@ -1,0 +1,179 @@
+/* first element */
+.first-element {
+    /* top: 9%;
+    position: absolute; */
+    padding: 2% 9%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    align-items: center;
+}
+
+.first-element .first-element-content { 
+    flex: 1 1 30rem;
+    background-color: black;
+    opacity: 0.85;
+    padding: 15px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px 6px rgba(0, 0, 0, 1.5);
+}
+
+.first-element .first-element-img {
+    flex: 1 1 30rem;
+}
+
+.first-element .first-element-img img {
+    width: 100%;
+    padding: 1rem;
+    animation: float 3s linear infinite;
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateX(0rem);
+    }
+    50% {
+        transform: translateY(-3rem);
+    }
+}
+
+.first-element .first-element-content h3 {
+    font-size: 50px;
+    color: white;
+}
+
+.first-element .first-element-content p {
+    font-size: 22px;
+    color: white;
+    padding: 1rem 0;
+}
+
+/* second element */
+.second-element {
+    padding: 30px 108px;
+}
+
+.box-element-img {
+    width: 400px;
+    height: 400px;
+}
+
+.box-element-content img {
+    width: 100px;
+    height: 100px;
+}
+
+.element-head {
+    text-align: center;
+    font-size: 40px;
+    padding: 10px;
+}
+
+.second-element .box-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.second-element .box-container .box-element {
+    flex: 1 1 20rem;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+    border: .1rem solid rgba(0, 0, 0, .3);
+    cursor: pointer;
+    border-radius: .5rem;
+}
+
+.second-element .box-container .box-element .box-element-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: -100%;
+    left: 0;
+}
+
+.second-element .box-container .box-element .box-element-content {
+    text-align: center;
+    background: #fff;
+    padding: .5rem;
+}
+
+.second-element .box-container .box-element .box-element-content img {
+    margin: 1.5rem 0;
+}
+
+.second-element .box-container .box-element .box-element-content h3 {
+    font-size: 2.5rem;
+    color: #333;
+}
+
+.second-element .box-container .box-element .box-element-content p {
+    font-size: 16px;
+    color: #666;
+    padding: 1rem 0;
+}
+
+.second-element .box-container .box-element:hover .box-element-img {
+    top: 0;
+    transition: 1s;
+}
+
+/* thrid-element */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* common */
+
+@media(max-width: 1215px) {
+    .first-element .first-element-content {
+        margin-top: 100px;
+    }
+
+    .first-element .first-element-img {
+        transform: scale(0.55);
+        margin-top: -300px;
+    }
+}
+
+@media(max-width: 1000px) {
+    .first-element .first-element-img {
+        margin-top: -180px;
+    }
+}
+
+.order-btn {
+  background-color: #c2fbd7;
+  border-radius: 100px;
+  box-shadow: rgba(44, 187, 99, .2) 0 -25px 18px -14px inset,rgba(44, 187, 99, .15) 0 1px 2px,rgba(44, 187, 99, .15) 0 2px 4px,rgba(44, 187, 99, .15) 0 4px 8px,rgba(44, 187, 99, .15) 0 8px 16px,rgba(44, 187, 99, .15) 0 16px 32px;
+  color: green;
+  cursor: pointer;
+  display: inline-block;
+  font-family: CerebriSans-Regular,-apple-system,system-ui,Roboto,sans-serif;
+  padding: 10px 30px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 250ms;
+  border: 0;
+  font-size: 16px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.order-btn:hover {
+  box-shadow: rgba(44,187,99,.35) 0 -25px 18px -14px inset,rgba(44,187,99,.25) 0 1px 2px,rgba(44,187,99,.25) 0 2px 4px,rgba(44,187,99,.25) 0 4px 8px,rgba(44,187,99,.25) 0 8px 16px,rgba(44,187,99,.25) 0 16px 32px;
+  transform: scale(1.05) rotate(-1deg);
+}

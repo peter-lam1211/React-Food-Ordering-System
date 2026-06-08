@@ -1,0 +1,135 @@
+/* navbar */
+.nav-bar {
+    width: 90%;
+    height: 9%;
+    background: black;
+    color: white;
+    position: fixed;
+    z-index: 1002;
+    top: 0;
+    opacity: 0.9;
+    padding: 0 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-bar .brand {
+    text-decoration: none;
+    color: white;
+    font-family: 'Ephesis';
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.nav-bar .brand i {
+    margin-left: 10px;
+    font-size: 40px;
+}
+
+.have-user {
+    display: flex;
+    gap: 10px;
+    font-size: 20px;
+}
+
+.nav-bar li, .dropdown-menu li {
+    list-style: none;
+}
+
+.nav-bar ul {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+
+.nav-bar .other-page {
+    text-decoration: none;
+    color: white;
+    font-size: 23px;
+}
+
+.nav-bar .other-page:hover {
+    color: orange;
+}
+
+.nav-bar .other-page::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: white;
+    transition: width .3s;
+}
+
+.nav-bar .other-page:hover::after {
+    width: 100%;
+}
+
+.nav-bar .toggle-btn {
+    color: white;
+    cursor: pointer;
+    display: none;
+}
+
+@media(max-width: 1140px) {
+    .nav-bar ul {
+        display: none;
+    }
+
+    .nav-bar .toggle-btn {
+        display: block;
+    }
+}
+
+/* dropdown menu */
+.dropdown-menu {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    right: 50px;
+    top: 70px;
+    width: 300px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(20px);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: 0.2s;
+}
+
+.dropdown-menu li {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dropdown-menu .other-page {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.dropdown-menu .other-page:hover {
+    text-align: center;
+    color: orange;
+}
+
+.dropdown-menu .other-page::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: white;
+    transition: width .3s;
+}
+
+.dropdown-menu .other-page:hover::after {
+    width: 100%;
+}
+
+@media(max-width: 1140px) {
+    .dropdown-menu {
+        display: none;
+    }
+}

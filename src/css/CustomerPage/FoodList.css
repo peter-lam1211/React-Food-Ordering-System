@@ -1,0 +1,115 @@
+.foodList-container {
+    /* top: 21%;
+    position: absolute; */
+    margin-top: 200px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    height: auto;
+}
+
+.foodList-category {
+    width: 15%;
+    text-align: center;
+}
+
+.foodList-category h2 {
+    margin-bottom: 20px;
+}
+
+.category-btn {
+    --b: 3px;
+    --s: .45em;
+    --color: #373B44;
+
+    padding: calc(.5em + var(--s)) calc(.9em + var(--s));
+    color: var(--color);
+    --_p: var(--s);
+    background:
+        conic-gradient(from 90deg at var(--b) var(--b), #0000 90deg, var(--color) 0) var(--_p) var(--_p)/calc(100% - var(--b) - 2*var(--_p)) calc(100% - var(--b) - 2*var(--_p));
+    transition: .3s linear, color 0s, background-color 0s;
+    outline: var(--b) solid #0000;
+    outline-offset: .6em;
+    font-size: 16px;
+
+    border: 0;
+
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    margin-bottom: 10px;
+    width: 170px;
+}
+
+.category-btn:hover,
+.category-btn:focus-visible {
+    --_p: 0px;
+    outline-color: var(--color);
+    outline-offset: .05em;
+}
+
+.category-btn:active {
+    background: var(--color);
+    color: #fff;
+}
+
+.foodList-card-area {
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.foodList-card {
+    width: 190px;
+    height: 254px;
+    padding: .8em;
+    background: #f5f5f5;
+    position: relative;
+    overflow: visible;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    margin: 15px;
+}
+
+.card-image img {
+    height: 100px;
+    width: 190px;
+}
+
+.card-image {
+    height: 100px;
+    width: 190px;
+    transition: .3s ease;
+}
+
+.card-info {
+    padding-top: 10%;
+}
+
+.card-footer {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 10px;
+    border-top: 1px solid #ddd;
+}
+
+.card-info-title {
+    font-weight: 900;
+    font-size: 1.2em;
+    line-height: 1.5;
+}
+
+.card-info-restaurant,
+card-info-deliveryFee {
+    font-size: .9em;
+    padding-bottom: 10px;
+}
+
+.card-image:hover {
+    transform: translateY(-25%);
+    box-shadow: rgba(226, 196, 63, 0.25) 0px 13px 47px -5px, rgba(180, 71, 71, 0.3) 0px 8px 16px -8px;
+}

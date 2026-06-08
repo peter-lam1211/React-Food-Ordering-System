@@ -1,0 +1,39 @@
+.foodDetail-container {
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    top: 25%;
+    left: 10%;
+    width: 80%;
+}
+
+.foodDetail-container .foodDetail-img {
+    width: 40%;
+} 
+
+.foodDetail-container .foodDetail-detail {
+    width: 40%;
+}
+
+.foodDetail-detail h3 {
+    margin-bottom: 5px;
+}
+
+.foodDetail-detail p {
+    margin-bottom: 10px;
+}
+
+.foodDetail-detail span {
+    font-size: large;
+    font-weight: 600;
+}
+
+.foodDetail-element-last {
+    margin-top: 10px;
+}
+
+.foodDetail-container .foodDetail-img img {
+    width: 100%;
+}

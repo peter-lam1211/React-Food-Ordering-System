@@ -1,0 +1,113 @@
+.nullCart {
+    /* position: absolute;
+    top: 30%; */
+    margin-top: 180px;
+    margin-bottom: 30px;
+    width: 100%;
+    text-align: center;
+}
+
+.nullCart img {
+    width: 300px;
+}
+
+.shoppingCart-container {
+    /* position: absolute;
+    top: 24%; */
+    margin-top: 200px;
+    margin-bottom: 30px;
+    width: 100%;
+    /* left: 5%; */
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/* .shoppingCart-mainContent {
+    width: 60%;
+} */
+
+.shoppingCart-container .shoppingCart-mainContent table {
+    border-spacing: 0px;
+}
+
+.shoppingCart-element {
+    height: 150px;
+    border: 1px solid black;
+}
+
+.shoppingCart-element td {
+    width: 200px;
+    padding: 10px;
+}
+
+.shoppingCart-element .elementBtn, .shoppingCart-element .foodSubTotal {
+    text-align: center;
+}
+
+.shoppingCart-element img {
+    width: 200px;
+}
+
+.shoppingCart-preCheckout {
+    border: 1px solid black;
+    border-radius: 20px;
+    height: 400px;
+    width: 300px;
+    padding: 15px;
+    /* width: 25%; */
+}
+
+.shoppingCart-preCheckout h2{
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.shoppingCart-preCheckout .preCheckout-element {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+}
+
+.preCheckout-btn-area {
+    width: 100%;
+    background: black;
+    text-align: center;
+    padding: 8px 0;
+    border-radius: 15px;
+    box-shadow: 2px 2px 4px rgba(1, 1, 1, 0.5);
+    cursor: pointer;
+    margin-top: 40px;
+}
+
+.preCheckout-btn {
+    width: 100%;
+    color: white;
+    text-decoration: none;
+}
+
+.preCheckout-reminder {
+    font-size: small;
+    color: red;
+}
+
+.preCheckout-btn-area:hover {
+    transform: translateY(-10px)
+}
+
+@media(max-width: 1180px) {
+
+    .shoppingCart-container{
+        display: block;
+    }
+
+    .shoppingCart-element td {
+        width: 20%;
+    }
+
+    .shoppingCart-preCheckout {
+        /* position: absolute; */
+        width: 70%;
+        margin-top: 20px;
+        margin-left: 15%;
+    }
+}

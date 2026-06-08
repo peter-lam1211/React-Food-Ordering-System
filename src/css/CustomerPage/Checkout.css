@@ -1,0 +1,357 @@
+.checkout-container {
+    margin-top: 200px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.checkout-session {
+    flex: 1;
+    margin: 15px;
+    width: 70%;
+}
+
+.checkout-area {
+    background: #eeeeed;
+    margin-bottom: 15px;
+    padding: 10px;
+    border-radius: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.checkout-area h3 {
+    margin-bottom: 15px;
+}
+
+/* Session 1 */
+
+.review-group-cost .review-group-cost-element{
+    display: flex;
+    justify-content: space-between;
+    margin: 15px 26px;
+}
+
+
+/* Session 2 */
+
+/* .radio-group {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+} */
+
+.radio-item [type="radio"] {
+    display: none;
+}
+
+.radio-item+.radio-item {
+    margin-top: 15px;
+}
+
+.radio-item label {
+    display: block;
+    padding: 15px 60px;
+    background: #eeeeed;
+    color: black;
+    border: 2px solid black;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 500;
+    /* min-width: 250px; */
+    white-space: nowrap;
+    position: relative;
+    transition: 0.4s ease-in-out 0s;
+}
+
+.radio-item label:after,
+.radio-item label:before {
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+}
+
+.radio-item label:after {
+    height: 19px;
+    width: 19px;
+    border: 2px solid black;
+    left: 20px;
+    top: calc(50% - 12px);
+}
+
+.radio-item label:before {
+    background: black;
+    height: 20px;
+    width: 20px;
+    left: 21px;
+    top: calc(50%-5px);
+    transform: scale(5);
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.4s ease-in-out 0s;
+}
+
+.radio-item [type="radio"]:checked~label {
+    border-color: black;
+}
+
+.radio-item [type="radio"]:checked~label::before {
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1);
+}
+
+.input-group textarea {
+    width: 94%;
+    height: 50px;
+    font-size: 16px;
+    padding: 10px 10px;
+    background: transparent;
+    border: 1px solid #333;
+    outline: none;
+    border-radius: 5px;
+}
+
+.input-group textarea:focus~label,
+.input-group textarea:valid~label {
+    top: 0;
+    font-size: 12px;
+    background-color: #fff;
+}
+
+.input-group span {
+    color: red;
+}
+
+.dropdown-list-group {
+    width: 50%;
+}
+
+.dropdown-list-group .input-option {
+    position: absolute;
+    background: white;
+    z-index: 1000;
+    box-shadow: 0 30px 30px rgba(0, 0, 0, 0.4);
+    margin-top: 10px;
+    border-radius: 15px;
+    padding: 10px;
+    overflow: hidden;
+    display: none;
+    transition: 2s;
+}
+
+.dropdown-list-group .input-option p {
+    padding: 3px;
+    cursor: pointer;
+}
+
+.dropdown-list-group .input-option p:hover {
+    background: #62baea;
+    color: white;
+}
+
+.dropdown-btn {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    border: none;
+    background: #eeeeed;
+    transition: 0.5s;
+}
+
+.dropdown-btn:hover {
+    transform: scale(1.4);
+}
+
+.dropdown-btn i {
+    font-size: 20px;
+}
+
+.dropdown-btn.active {
+    transform: rotate(180deg);
+}
+
+
+/* Session 3 */
+
+.paymentMethod-group div {
+    display: flex;
+}
+
+.paymentMethod-group button {
+    width: 45%;
+    padding: 10px;
+    height: 45px;
+    margin: 10px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 15px;
+    border-radius: 15px;
+    background: black;
+    color: white;
+    font-weight: 600;
+}
+
+.paymentMethod-group button:hover {
+    transform: scale(0.95);
+}
+
+.muti-input-group {
+    display: flex;
+}
+
+.muti-input-group .input-group {
+    margin: -3px 0 0 0;
+}
+
+.muti-input-group .input-group input {
+    width: 88%;
+}
+
+.codePayment {
+    width: 300px;
+}
+
+.showConfirmBtn-area {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.showConfirmBtn {
+    width: 200px;
+    height: 50px;
+    font-size: 18px;
+    border-radius: 15px;
+    background: black;
+    color: white;
+    font-weight: 600;
+    padding: 10px;
+}
+
+.showConfirmBtn:hover {
+    transform: scale(0.9);
+}
+
+/* Confirm message */
+
+.confirmMsg-container {
+    width: 50%;
+    height: auto;
+    min-height: 60%;
+    background: #e6e6e8;
+    padding: 20px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 20px;
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    z-index: 2000;
+}
+
+.confirmMsg-container .confirmMsg-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.confirmMsg-container .confirmMsg-heading h2 {
+    text-align: center;
+    width: 100%;
+}
+
+.confirmMsg-container .confirmMsg-heading button {
+    border: none;
+    background: #e6e6e8;
+    transform: scale(1.5);
+}
+
+.confirmMsg-container .confirmMsg-heading button:hover {
+    transform: scale(0.99);
+}
+ 
+.confirmMsg-mainContent {
+    display: flex;
+    gap: 7px;
+    flex-wrap: wrap;
+}
+
+.confirmMsg-mainContent h3 {
+    margin-bottom: 10px;
+}
+
+.confirmMsg-mainContent .mainContent-orderMeal {
+    width: 50%;
+    flex: 1;
+}
+
+.confirmMsg-mainContent .mainContent-orderInfo {
+    width: 50%;
+    flex: 1;
+}
+
+.mainContent-orderMeal table {
+    width: 100%;
+}
+
+.mainContent-orderMeal .firstTd {
+    width: 50%;
+}
+
+.mainContent-orderMeal .secondTd, .mainContent-orderMeal .thirdTd {
+    width: 25%;
+    text-align: center;
+}
+
+.pageBtn {
+    width: 100px;
+    margin: 10px 10px 10px 0;
+}
+
+.orderMeal-cost .orderMeal-cost-element {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 31px 10px 10px;
+}
+
+.orderInfo-detail .orderInfo-detail-element {
+    display: flex;
+    justify-content: space-between;
+    margin: 18px 20px 10px 10px;
+}
+
+.mainContent-confirmOrder {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.mainContent-confirmOrder .confirmOrderBtn {
+    width: 200px;
+    height: 50px;
+    font-size: 18px;
+    border-radius: 15px;
+    background: black;
+    color: white;
+    font-weight: 600;
+    padding: 10px;
+}
+
+.mainContent-confirmOrder .confirmOrderBtn:hover {
+    transform: scale(0.9);
+}
+
+@media(max-width: 1080px) {
+    .checkout-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
